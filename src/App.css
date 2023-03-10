@@ -1,0 +1,484 @@
+*{
+  
+ 
+  border: 0;
+}
+
+
+.App {
+  position: relative;
+height: 100vh;
+width:100%;
+  text-align: center;
+  background-image: linear-gradient(270deg, rgb(255, 79, 79), purple, rgb(114, 114, 255));
+  justify-content: center;
+}
+#navbar{
+  margin-top: 3vh;
+display: flex;
+background-color: white;
+justify-content: center;
+width: 70%;
+height: 05%;
+margin: auto;
+column-gap: 5vh;
+border-end-start-radius:10px ;
+border-end-end-radius: 10px ;
+}
+
+#cg{
+justify-content: center;
+
+width: 100%;
+height: 100%;
+}
+#cg button{
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  color: white;
+  background-color: rgb(64, 75, 198);
+font-size: 15px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+border-radius: 10px;
+
+}
+
+
+
+#createGame{
+
+  width: 100%;
+  height: 80%;
+  justify-content: center;
+  display: flex;
+  column-gap: 0vh;
+  align-items: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: white;
+}
+#Ainput{
+  display: inline-block;
+  
+
+
+}
+
+#Ainput input{
+  padding: 10px;
+  margin-top: 10px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border-radius: 10px;
+  font-size: 15px;
+}
+#Binput input{
+  padding: 10px;
+  margin-top: 10px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+#Binput{
+  display:inline;
+}
+#TeamA{
+  margin-left:10px;
+
+  width: 50%;
+  height: 50%;
+  background-color: rebeccapurple;
+}
+#TeamA img{
+  width: 10%;
+}
+#TeamB{
+  margin-right:10px;
+  width: 50%;
+  height: 50%;
+  background-color: red;
+}
+
+@media only screen and (min-width: 800px){
+
+ #cg{
+  margin: auto;
+  padding:auto;
+ }
+ #createGame{
+  margin:auto;
+  display: flex;
+
+
+ }
+#TeamA{
+
+  border-radius: 10px;
+  margin:auto ;
+}
+#TeamB{
+  border-radius: 10px;
+  margin: auto;
+}
+#cg button{
+  
+
+}
+}
+@media only screen and (max-width: 800px){
+  
+  .App{
+    background-image: linear-gradient(0deg, rgb(255, 79, 79), purple, rgb(114, 114, 255));
+    width: 100%;
+    height: 100%;
+  }
+  #cg{
+    margin: auto;
+    padding:auto;
+   }
+   #createGame{
+    display:inline-table;
+  
+  
+   }
+  #TeamA{
+  
+    border-radius: 10px;
+    margin:auto ;
+  }
+  #TeamB{
+    border-radius: 10px;
+    margin: auto;
+  }
+  #cg button{
+    margin-top: 20px;
+  
+  }
+ #login{
+  width: 100%;
+  height: 99vh;
+ }
+#Sin{
+  
+  height: 99vh;
+}
+
+#h{
+  margin: auto;
+}
+
+}
+
+#Match{
+  background-repeat: no-repeat;
+
+  color: white;
+  align-items: center;
+  justify-content: center;
+  row-gap: 10px;
+
+  display:flex;
+    flex-wrap: wrap-reverse;
+    width: 100%;
+    height: 60%;
+    overflow-y:scroll;
+}
+#ts{
+  border: 1px solid black;
+padding: 30px 30px;
+  margin: auto;
+  background-color:purple;
+  border-radius: 10px;
+  width: 40%;
+  height: 40%;
+}
+#ad-home{
+  background-repeat: no-repeat;
+
+  color: white;
+  align-items: center;
+  justify-content: center;
+  row-gap: 10px;
+
+  display:flex;
+    flex-wrap: wrap-reverse;
+    width: 100%;
+    height: 60%;
+    overflow-y:scroll;
+}
+#ts-ad{
+  padding: 30px 30px;
+  margin: auto;
+  background-color:darkslateblue;
+  border-radius: 10px;
+  width: 40%;
+  height: 40%;
+}
+#home{
+  border-radius: 10px;
+  background-color:cornflowerblue;
+  margin: auto;
+  width: 80%;
+  height: 40%;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+#s{
+  display: flex;
+  
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+#home button{
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+padding: 10px;
+margin: 2px;
+  border:2px solid black;
+  border-radius: 10%;
+  color: white;
+  background-color: rgb(64, 75, 198);
+}
+#home button:active{
+  border: 2px solid white;
+}
+
+
+#ham{
+  display: none;
+}
+
+@media only screen and (max-width:800px){
+ 
+  #navbar{
+   display: none;
+  }
+  #ham{
+    display: block;
+    float: right;
+    background-color: black;
+    width: 100%;
+ 
+    height: 10%;
+    position: relative;
+    
+  }
+  #ham div{
+    
+    background-color: white;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+   background-color: lightskyblue;
+    color: #fff;
+  }
+#ham-d span{
+  display: block;
+}
+
+
+#Sin{
+  width: 100%;
+  height: 100vh;
+}
+  #Match{
+    display:flex;
+    flex-wrap: wrap-reverse;
+    width: 100%;
+    height: 60%;
+    overflow: hidden;
+    
+  }
+  #ad-home{
+    display:flex;
+    flex-wrap: wrap-reverse;
+    width: 100%;
+    height: 60%;
+    overflow: hidden;
+    
+  }
+  #h{
+    height: 99vh;
+    width: 50%;
+  }
+  #Match{
+    
+    flex-direction: column-reverse;
+    position:relative;
+  
+  }
+  #ad-home{
+    
+    flex-direction: column-reverse;
+    position:relative;
+  
+  }
+
+  
+}
+
+#im{
+
+  animation: 3;
+  animation-name: rota;
+  animation-duration: 1s;
+}
+#mm{
+  border-radius: 40%;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 20%;
+  height: 50%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  animation: 1;
+  animation-duration: 4s;
+  animation-name: rota;
+}
+
+@keyframes rota{
+  from{rotate: 0deg;}
+  to{rotate: 360deg;}
+  
+  
+}
+
+#login{
+  width: 100%;
+  height: 100;
+  margin: auto;
+  
+}
+
+#logd{
+width: 50%;
+height:50%;
+margin: auto;
+}
+
+#login input{
+  border-radius: 10px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+padding: 10px;
+margin-top: 10px;
+}
+#login button{
+margin-top: 20px;
+padding: 10px;
+border-radius: 10px;
+background-color: blue;
+color: #fff;
+}
+#login u:hover {
+  color: navy;
+}
+
+
+#Sin{
+  width: 100%;
+  height: 99vh;
+  margin: auto;
+}
+#Sin input{
+  border-radius: 10px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+padding: 10px;
+margin-top: 10px;
+}
+
+#Sin button{
+  padding: 10px;
+margin-top: 20px;
+border-radius: 10px;
+background-color: blue;
+color: #fff;
+}
+#Sin u:hover{
+  color: navy;
+}
+
+
+#ha1{
+  display: none;
+
+}
+#ha2{
+  display: none;
+}
+
+@media only screen and (max-width:899px){
+ 
+  #ha1{
+    margin: 10px 10px;
+    float: right;
+    color: white;
+    display: none;
+    
+  }
+  #ha2{
+    display: block;
+    color: white;
+  }
+}
+
+
+
+
+
+#logd #ty :active{
+
+  
+  animation-duration: 1s;
+  animation-name: shake;
+  
+}
+#logd #log_name:active{
+
+  
+  animation-duration: 1s;
+  animation-name: shake;
+  
+}
+#logd #log_pass:active{
+
+  
+  animation-duration: 1s;
+  animation-name: shake;
+  
+}
+
+@keyframes shake{
+  25%{transform:translateX(10px)}
+  10%{transform:translateX(-10px)}
+  
+  
+}
+
+#ts span{
+  
+color: white;
+padding: 10px 10px;
+border-radius: 100px;
+
+}
+#ts-ad button{
+  color: white;
+  padding: 10px 10px;
+  border-radius: 100px;
+  
+  }
+
+.p{
+  margin-right: 10px;
+  background-color:green;
+}
+.m{
+  margin-left: 10px;
+  background-color: red;
+}
